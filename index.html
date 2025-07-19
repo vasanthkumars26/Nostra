@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<!-- styleforlikebutton -->
+
+<style>
+
+ html {
+      scroll-behavior: smooth;
+    }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+</style>
+
+<body class="text-sm md:text-sm lg:text-base xl:text-base scroll-smooth">
+
+
+
+    <!-- above header section -->
+    <div id="header0" class="flex justify-center text-white p-3 m-5 bg-gray-800 gap-2 ">
+
+        <p>SignUp and </p>
+        <p class="font-bold">GET 20% OFF</p>
+        <p>for your first Order</p>
+        <p class="ml-10 cursor-pointer" id="closebtn">X</p>
+    </div>
+
+    <!-- header -->
+
+    <div class="bg-white z-10 p-5 sticky md:text-sm  top-0 flex justify-between">
+        <div class="font-bold text-2xl">
+            <p>Nostra</p>
+        </div>
+        <svg  id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" weight="16"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden lg:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <!-- navbar -->
+
+        <nav class=" gap-5 hidden md:flex lg:flex text-xl font-semibold" >
+            <a class="hover:underline" href="">
+                <p >Home</p>
+            </a>
+            <a class="hover:underline" href="#newarrival">
+                <p>New Arrival</p>
+            </a>
+            <a class="hover:underline" href="#mostwanted">
+                <p>MostWanted</p>
+            </a>
+            <a class="hover:underline" href="collections.html">
+                <p>Collections</p>
+            </a>
+            <a class="hover:underline" href="contact.html">
+                <p>Contact us</p>
+            </a>
+        </nav>
+
+
+    </div>
+
+    <!-- sidenavbar -->
+
+    <div id="sidenavbarr" class="z-20 bg-gray-800 fixed transition-all duration-1000 top-0 left-0 " style="width: 50%;height: 100vh; left: -50%;">
+
+        <div id="sidenavclose" class="text-right cursor-pointer m-5 text-xl text-white ">
+            <p >X</p>
+        </div>
+         <div id="sidenavbarr" class="p-5 flex flex-col  items-center gap-10 text-white text-lg font-semibold">
+            <a class="hover:underline" href="">
+                <p>Home</p>
+            </a>
+            <a class="hover:underline" href="#newarrival">
+                <p>New Arrival</p>
+            </a>
+            <a class="hover:underline" href="#mostwanted">
+                <p>MostWanted</p>
+            </a>
+            <a class="hover:underline" href="collections.html">
+                <p>Collections</p>
+            </a>
+            <a class="hover:underline" href="contact.html">
+                <p>Contact us</p>
+            </a>
+            </div>
+        </div>
+    
+
+    <!-- imagesection -->
+
+    <div>
+        <div id="slider" class=" flex m-5 bg-black opacity-90 p-5 h-80 justify-between text-white"
+            style="border-radius: 5px; background-image: url('images/bg11.png');height: 320px;  width: auto;">
+            <!-- left-arrow -->
+            <div><img  id="previousbtn" class="h-20 mt-24 bg-transparent" src="images/left-arrow.png" alt=""></div>
+            <!-- content in image -->
+            <div class="m-10 ">
+                <h1 class="mt-6 font-bold text-4xl ">Level up your style with our</h1>
+                <p class="m-3 pl-10">Summer collections</p>
+
+                <!-- button -->
+
+                <button style="font-size: small;" class="bg-white text-black ml-20 p-1 flex">Shop now <img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+            </div>
+            <!-- right-arrow -->
+            <div><img id="nextbtn" class="h-20 mt-24" src="images/right-arrow.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- brandssection -->
+
+    <div class="m-5  ">
+        <p class="font-bold text-2xl ">Brands</p>
+        <div class="grid grid-cols-7  md:grid-cols-7 lg:grid-cols-7 gap-4">
+
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/adidas.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Adidas</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/nike.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Nike</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/puma (1).png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Puma</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/leaves.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Leaves</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/twitch.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Twitch</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/behance.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Behance</p>
+            </div>
+            <div class="flex flex-wrap flex-col items-center">
+                <img class="h-16 md:h-16 w-auto max-w-[100px] mx-auto" src="images/ball.png" alt="adidas">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl">Athletic</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- belowbrands -->
+
+    <div class="flex justify-between m-5 mt-16 ">
+        <p class="font-bold text-3xl">We provide the best Customer Experience</p>
+        <p class=" mt-3">|| We ensure that our customer have the best shopping experience</p>
+    </div>
+
+    <!-- customer queries -->
+
+    <div class="grid grid-cols-2 md:grid-cols-4 text-sm">
+        <div class="bg-gray-200 p-3 m-2">
+            <img class="h-14 m-2" src="images/fimg1.png" alt="fimg1">
+            <p class="font-bold">Original Products</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet incidunt harum 
+            </p>
+        </div>
+        <div class="bg-gray-200 p-3 m-2">
+            <img class="h-14 m-2" src="images/fimg2.png" alt="fimg2">
+            <p class="font-bold">Satisfaction Guarantee</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet incidunt harum 
+            </p>
+        </div>
+        <div class="bg-gray-200 p-3 m-2">
+            <img class="h-14 m-2" src="images/fimg3.png" alt="fimg1">
+            <p class="font-bold">New Arrival Everyday</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet incidunt harum 
+            </p>
+        </div>
+        <div class="bg-gray-200 p-3 m-2">
+            <img class="h-14 m-2"  src="images/fimg4.png" alt="fimg1">
+            <p class="font-bold">Fast & Free Shipping</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet incidunt harum 
+            </p>
+        </div>
+    </div>  
+
+    <!-- newArrivals -->
+            <section id="newarrival" >
+    <div class="m-5 ">
+        <p class="font-bold text-3xl">New Arrivals</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-10 text-center gap-10 overflow-x-scroll no-scrollbar space-x-5 pb-4" >
+        <div class="m-5 relative">
+            <img class="rounded-md  " src="images/dress1.jpg" alt="dress1" style="height: 300px; width: 250px;">
+            <button class="flex absolute bottom-16 bg-white p-1 ml-14">Shop now<img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+        </div>
+        <div class="m-5 relative">
+            <img class="rounded-md" src="images/dress2.jpg" alt="dress2" style="height: 300px; width: 250px;">
+            <button class="flex absolute bottom-16 bg-white p-1 ml-14">Shop now<img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+        </div>
+        <div class="m-5 relative ">
+            <img class=" rounded-md " src="images/dress3.jpg" alt="dress3" style="height: 300px; width: 250px;">
+            <button class="flex absolute bottom-16 bg-white p-1 ml-14">Shop now<img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+        </div>
+        <div class="m-5 relative">
+            <img class="rounded-md" src="images/dress4.jpg" alt="dress4" style="height: 300px; width: 250px;">
+            <button class="flex absolute bottom-16 bg-white p-1 ml-14">Shop now<img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- MostWantedsection -->
+
+        <section id="mostwanted" >
+           <div class="m-5">
+    <p class="text-3xl font-bold mb-5">Most Wanted</p>
+
+    <!-- Horizontally Scrollable Card Container -->
+    <div id="cardRow" class="flex overflow-x-auto space-x-5 scrollbar-hide  no-scrollbar  pb-4">
+
+      <!-- CARD 1 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw1.jpg" alt="mw1">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw4.jpg" alt="mw2">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw3.jpg" alt="mw3">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw4.jpg" alt="mw4">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw5.jpg" alt="mw5">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="relative flex-none" style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw6.jpg" alt="mw6">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="relative flex-none " style="height:300px;width: 250px;">
+        <img class="rounded-md w-full h-full object-cover" src="images/mw7.jpg" alt="mw7">
+        <p class="absolute top-0 bg-red-500 w-24 h-12 text-center text-white text-3xl p-2">Sale</p>
+        <button class="like-btn absolute bottom-0 right-2 mb-4">
+          <img src="images/like.png" class="like-icon w-6 h-6" alt="like">
+        </button>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <!-- above footer -->
+
+        <div class="flex bg-gray-800 m-5">
+            <div class="p-7">
+                <img src="images/fimg.jpg" alt="fimg">
+            </div>
+            <div class="font-bold align-middle mt-5 mr-2 ml-10 md:mt-32 text-white">
+                <p class="text-xl md:text-5xl ">Limited offer</p>
+                <p class="text-sm md:text-xl ">35% OFF on this for the first 30 Customers</p>
+                
+                <button class="flex text-sm text-black bg-white p-1 mt-4">Shop now<img
+                        src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px;"
+                        alt=""></button>
+            </div>
+        </div>
+
+        <div class="justify-items-center m-5">
+            <p class="text-sm md:text-4xl font-bold">Join our News Letter</p>
+            <p class="text-sm md:text-3xl font-semibold mt-3  ml-28 ">Signup for our email newspaper to get exclusive discounts,updates,and more</p>
+            <div style="width: 90%;height: 150px;" class="justify-items-center mt-5 ml-12 md:ml-36 ">
+            <input type="text"  style="border: 2px solid black;width: 90%;height: 30%;">
+            <button class="flex  text-black mr-16 md:mr-40 font-semibold text-sm md:text-2xl bg-red-400 rounded-md p-2 mt-4">Subscribe<img
+                src="images/arrow-right-solid.svg" style="height: 15px;width: 20px;margin: 5px; margin-top: 10px;"
+                alt=""></button>
+            </div>
+            </div>
+
+            <!-- footer -->
+
+            <div class="bg-gray-800 p-10 mt-5 text-white">
+        <h1 class="text-sm md:text-5xl p-2 font-bold">Nostra</h1>
+        <p class="mt-5 p-2 text-sm md:text-3xl font-semibold">The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <div class="flex gap-40 mt-8 ml-3"><img src="images/twitter.png" alt="twitter">
+        <img src="images/instagram.png" alt="instagram">
+        <img src="images/facebook.png" alt="facebook">
+        </div>
+        <p class="mt-5 p-5 md:text-3xl font-semibold">@2023 Nostra.com</p>
+    </div>
+
+</body>
+
+<!-- Script -->
+
+<script src="index.js">
+</script>
+
+</html>
